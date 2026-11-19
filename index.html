@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Link to QR Code</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Link to QR Code</h1>
     <form id="qr-form">
         <label for="link">Link:</label>
-        <input type="url" name="link" id="link" placeholder="https://example.com" required>
-        <button type="submit">Generate</button>
+        <input type="url" name="link" id="link" placeholder="https://example.com" autocomplete="off" required>
+        <button type="submit" id="generate">Generate</button>
     </form>
     <p id="status"></p>
     <div id="qr-code-container"></div>
     <script src="utilities.js" defer></script>
 </body>
+<footer>
+    <p class="copyright">Copyright &copy; 2026 Henry Avink</p>
+</footer>
 </html>
