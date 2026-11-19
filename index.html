@@ -9,11 +9,11 @@
     <h1>Link to QR Code</h1>
     <form id="qr-form">
         <label for="link">Link:</label>
-        <input type="text" name="link" id="link" placeholder="Enter Link Here">
-        <button>Generate</button>
+        <input type="url" name="link" id="link" placeholder="https://example.com" required>
+        <button type="submit">Generate</button>
     </form>
     <p id="status"></p>
-    <img id="qr-code" alt="Generated QR code" hidden>
+    <div id="qr-code-container"></div>
+    <script src="utilities.js" defer></script>
 </body>
-<script src="utilities.js" difer></script>
 </html>
